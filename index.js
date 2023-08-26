@@ -8,6 +8,7 @@ import UserRoute from "./routes/User.js";
 import PostRoute from "./routes/Post.js";
 import ChatRoute from "./routes/Chat.js";
 import MessageRoute from "./routes/Message.js";
+import PayRoute from "./routes/Payment.js";
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use("/users", UserRoute);
 app.use("/posts", PostRoute);
 app.use("/chat", ChatRoute);
 app.use("/message", MessageRoute);
+app.use("/pay", PayRoute);
 
 const port = process.env.PORT || 5000;
 
